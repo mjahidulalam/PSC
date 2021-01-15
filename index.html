@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/web.css">
+    <link rel="stylesheet" type="text/css" href="./style/web.css">
     <title>Prague Student Centre</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./style/web.js"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 <body>
@@ -36,14 +40,15 @@
             </li>
           </ul>
         </div>
-        <nav class="navbar navbar-light bglight navbar-fixed-top" >
-            <div class="container-fluid" style="background-color: #e3f2fd;">
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
+
+        <div class="wrapper1">
+          <div class="search-box1">
+             <input type="text" placeholder="Search" class="input1">
+             <div class="btn1">
+               <i class="fa fa-search" aria-hidden="true"></i>
+             </div>
+          </div>
+        </div>
     </nav>
 
     <div class="banner">
@@ -52,13 +57,19 @@
                 <h1 class="display-4">Prague Student Centre</h1>
                 <p class="lead">Looking to study in Prague? We're here to help!</p>
                 <hr class="my-4">
-                <p>More coming soon!</p>
-                <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                  <div class="mb-3">
+                    <label class="sr-only" for="inlineFormInputGroupUsername2">More coming soon! Please provide you contact information and we will inform you when the website is active</label>
+                    <div class="input-group mb-2 mr-sm-2">
+                      <label for="exampleFormControlInput1" class="form-label">More coming soon! If you would like to be updated on when the site is live, please provide your contact details below.</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                  </div>
                 </p>
             </div>
         </div>
-    </div>
+      </div>
+
     <div class="container">
       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam adipisci sapiente eos aliquid saepe, veritatis praesentium officia illo deleniti blanditiis nostrum quaerat perferendis accusamus iure necessitatibus corporis sint molestias iste.</p>
       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam adipisci sapiente eos aliquid saepe, veritatis praesentium officia illo deleniti blanditiis nostrum quaerat perferendis accusamus iure necessitatibus corporis sint molestias iste.</p>
